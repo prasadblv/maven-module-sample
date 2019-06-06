@@ -21,10 +21,10 @@
     </properties>
 
      <scm>
-		<connection>scm:git:git@github.com:prasadblv/maven-multi-module-example.git</connection>
-		<developerConnection>scm:git:git@github.com:prasadblv/maven-multi-module-example.git</developerConnection>
+		<connection>scm:git:git@github.com:prasadblv/maven-module-sample.git</connection>
+		<developerConnection>scm:git:git@github.com:prasadblv/maven-module-sample.git</developerConnection>
 		<tag>HEAD</tag>
-		<url>scm:git:https://github.com/prasadblv/maven-multi-module-example</url>
+		<url>scm:git:https://github.com/prasadblv/maven-module-sample</url>
 	</scm>
 
     <modules>
