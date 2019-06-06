@@ -16,7 +16,16 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <junit.version>5.3.1</junit.version>
         <spring.version>5.1.0.RELEASE</spring.version>
+        <unleash-maven-plugin.version>2.9.3</unleash-maven-plugin.version>
+		<unleash-scm-provider-git.version>2.2.0</unleash-scm-provider-git.version>
     </properties>
+
+     <scm>
+		<connection>scm:git:git@github.com:prasadblv/maven-multi-module-example.git</connection>
+		<developerConnection>scm:git:git@github.com:prasadblv/maven-multi-module-example.git</developerConnection>
+		<tag>HEAD</tag>
+		<url>scm:git:https://github.com/prasadblv/maven-multi-module-example</url>
+	</scm>
 
     <modules>
         <module>password</module>
@@ -61,6 +70,19 @@
                 <artifactId>maven-dependency-plugin</artifactId>
                 <version>3.1.1</version>
             </plugin>
+
+            <plugin>
+			<groupId>com.itemis.maven.plugins</groupId>
+			<artifactId>unleash-maven-plugin</artifactId>
+			<version>${unleash-maven-plugin.version}</version>
+			<dependencies>
+				<dependency>
+					<groupId>com.itemis.maven.plugins</groupId>
+					<artifactId>unleash-scm-provider-git</artifactId>
+					<version>${unleash-scm-provider-git.version}</version>
+				</dependency>
+			</dependencies>
+		</plugin>
         </plugins>
     </build>
 
